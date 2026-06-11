@@ -74,6 +74,9 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`images-upscale`](skills/images-upscale/SKILL.md) | 1 | AI-enlarge a creation 2x or 4x for print / hi-res output. |
 | [`images-relight`](skills/images-relight/SKILL.md) | 1 | Relight a creation with 1–4 directional lights (intensity, neutral or colored gel). |
 | [`images-remove-background`](skills/images-remove-background/SKILL.md) | 1 | Cut the subject out onto a transparent PNG for compositing. |
+| [`images-resize`](skills/images-resize/SKILL.md) | 1 | Resize a creation to exact pixel dimensions (snaps to ×8). |
+| [`images-crop`](skills/images-crop/SKILL.md) | 1 | Center-crop a creation to one of 8 target aspect ratios. |
+| [`images-variations`](skills/images-variations/SKILL.md) | 1 | Generate a grid of variations (angles, demographics, expressions, age, storyboard, custom). |
 
 ## Status
 
