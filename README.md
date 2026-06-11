@@ -77,6 +77,9 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`images-resize`](skills/images-resize/SKILL.md) | 1 | Resize a creation to exact pixel dimensions (snaps to ×8). |
 | [`images-crop`](skills/images-crop/SKILL.md) | 1 | Center-crop a creation to one of 8 target aspect ratios. |
 | [`images-variations`](skills/images-variations/SKILL.md) | 1 | Generate a grid of variations (angles, demographics, expressions, age, storyboard, custom). |
+| [`flows-run`](skills/flows-run/SKILL.md) | 1 | Find, inspect, and run a packaged Magnific Flow, then return the output creations. |
+| [`library-show`](skills/library-show/SKILL.md) | 1 | Browse or pick reusable Library assets (characters, styles, elements, locations) for use as references. |
+| [`folders-list`](skills/folders-list/SKILL.md) | 1 | List folders/projects to get a `folderReference` for filing outputs. |
 
 ## Status
 
