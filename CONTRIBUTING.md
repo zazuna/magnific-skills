@@ -35,7 +35,11 @@ is stable.
 
 ## Layer discipline
 
-- **Layer 1** skills wrap exactly one Magnific tool. No orchestration.
+- **Layer 1** skills wrap exactly one **capability** — one user intent. Usually that
+  is one Magnific tool, but it may be a few tightly-coupled calls when the API splits a
+  single operation across tools (e.g. presigned upload: `request_upload` → PUT →
+  `finalize_upload`). What a Layer 1 skill must **not** do is orchestrate *separate*
+  intents (don't generate-then-upscale in one wrapper — that's Layer 2).
 - **Layer 2** skills orchestrate Layer 1 skills. They call no Magnific tool directly that a Layer 1 skill already wraps.
 - **Layer 3** (your brand-specific skills) does **not** belong in this repo. Keep it in your own project.
 
