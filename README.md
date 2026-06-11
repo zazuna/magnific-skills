@@ -85,10 +85,15 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`video-speak`](skills/video-speak/SKILL.md) | 1 | Talking-head (image+audio) or lip-sync (video+audio) speaking videos. |
 | [`video-upscale`](skills/video-upscale/SKILL.md) | 1 | Upscale/enhance video via Topaz or Magnific modes. |
 | [`video-concatenate`](skills/video-concatenate/SKILL.md) | 1 | Join 2–10 completed clips into one MP4 in playback order. |
+| [`audio-tts`](skills/audio-tts/SKILL.md) | 1 | Text-to-speech voiceover (single voice or two-speaker), ElevenLabs/Google. |
+| [`audio-music-generate`](skills/audio-music-generate/SKILL.md) | 1 | Generate music beds/soundtracks from a description (Lyria/ElevenLabs). |
+| [`models3d-generate`](skills/models3d-generate/SKILL.md) | 1 | Convert an image creation into a 3D GLB model (Tripo/Trellis). |
+| [`images-change-camera`](skills/images-change-camera/SKILL.md) | 1 | Reframe the camera (rotate/vertical/closeup) around a subject. |
+| [`images-skin-enhancer`](skills/images-skin-enhancer/SKILL.md) | 1 | Enhance skin/portrait detail (faithful/creative/flexible). |
 
 ## Status
 
-🚧 Early. Layer 1 wrappers in progress; Layer 2 orchestrators not started.
+🚧 **Layer 1 complete** — 21 wrappers covering the image, video, audio, 3D, flow, library, and folder surface. Layer 2 orchestrators (banner-flow, listing visuals, video ad) not started.
 
 ## License
 
