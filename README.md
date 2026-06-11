@@ -2,7 +2,7 @@
 
 A forkable, Higgsfield-style skill set for the [Magnific](https://magnific.com) MCP server. Turn Magnific's image, video, audio, and 3D tools into composable agent skills you can chain into real production workflows — banners, ad variants, listing visuals, video spots, and more.
 
-Works with any MCP-capable agent (Claude Code, Codex, etc.).
+Works with any MCP-capable agent (Claude Code, Codex, etc.). Most skills are pure MCP calls; a few need a shell for steps the MCP server can't do itself (e.g. uploading a local file via presigned `PUT`). Those skills say so and offer a shell-free fallback, so they degrade gracefully on hosts without a terminal.
 
 ## Philosophy
 
@@ -63,9 +63,18 @@ Every skill must pass the linter (≤300 lines, required frontmatter, folder == 
 
 Run it before opening a PR. Folders prefixed with `_` (scaffolding) are skipped.
 
+## Skills
+
+Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators built from Layer 1. Keep this table in sync when you add a skill (see CONTRIBUTING).
+
+| Skill | Layer | What it does |
+|-------|-------|--------------|
+| [`creations-upload`](skills/creations-upload/SKILL.md) | 1 | Turn a public URL, host-attached file, or local file into a Magnific creation `identifier` — the prerequisite for using any image as a reference. |
+| [`images-generate`](skills/images-generate/SKILL.md) | 1 | Text-to-image, or image-conditioned generation using reference creations, characters, products, locations, or styles. |
+
 ## Status
 
-🚧 Early scaffolding. Layer 1 wrappers in progress.
+🚧 Early. Layer 1 wrappers in progress; Layer 2 orchestrators not started.
 
 ## License
 
