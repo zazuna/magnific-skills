@@ -71,6 +71,9 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 |-------|-------|--------------|
 | [`creations-upload`](skills/creations-upload/SKILL.md) | 1 | Turn a public URL, host-attached file, or local file into a Magnific creation `identifier` — the prerequisite for using any image as a reference. |
 | [`images-generate`](skills/images-generate/SKILL.md) | 1 | Text-to-image, or image-conditioned generation using reference creations, characters, products, locations, or styles. |
+| [`images-upscale`](skills/images-upscale/SKILL.md) | 1 | AI-enlarge a creation 2x or 4x for print / hi-res output. |
+| [`images-relight`](skills/images-relight/SKILL.md) | 1 | Relight a creation with 1–4 directional lights (intensity, neutral or colored gel). |
+| [`images-remove-background`](skills/images-remove-background/SKILL.md) | 1 | Cut the subject out onto a transparent PNG for compositing. |
 
 ## Status
 
