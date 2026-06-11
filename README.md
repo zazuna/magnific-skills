@@ -80,6 +80,11 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`flows-run`](skills/flows-run/SKILL.md) | 1 | Find, inspect, and run a packaged Magnific Flow, then return the output creations. |
 | [`library-show`](skills/library-show/SKILL.md) | 1 | Browse or pick reusable Library assets (characters, styles, elements, locations) for use as references. |
 | [`folders-list`](skills/folders-list/SKILL.md) | 1 | List folders/projects to get a `folderReference` for filing outputs. |
+| [`video-plan`](skills/video-plan/SKILL.md) | 1 | Draft a video brief, model choice, and clip breakdown before generating. |
+| [`video-generate`](skills/video-generate/SKILL.md) | 1 | Text/image-to-video and multi-shot clips with keyframes and references. |
+| [`video-speak`](skills/video-speak/SKILL.md) | 1 | Talking-head (image+audio) or lip-sync (video+audio) speaking videos. |
+| [`video-upscale`](skills/video-upscale/SKILL.md) | 1 | Upscale/enhance video via Topaz or Magnific modes. |
+| [`video-concatenate`](skills/video-concatenate/SKILL.md) | 1 | Join 2–10 completed clips into one MP4 in playback order. |
 
 ## Status
 
