@@ -29,6 +29,9 @@ Fork Layers 1 + 2, plug in your own Layer 3, and you have a working visual-produ
 magnific-skills/
   README.md
   CONTRIBUTING.md
+  LICENSE
+  lint.sh               # validates every SKILL.md (see "Validate")
+  .gitignore
   skills/
     _TEMPLATE/          # copy this to start a new skill
       SKILL.md
@@ -46,6 +49,19 @@ magnific-skills/
    ```
 2. Authenticate (in Claude Code: `/mcp` → select Magnific).
 3. Point your agent at the `skills/` directory.
+
+> **Note:** the `allowed-tools` IDs use a connector-specific prefix
+> (`mcp__claude_ai_Magnific__…`). If yours differs, see [CONTRIBUTING.md](CONTRIBUTING.md#mcp-tool-names-are-connector-specific-).
+
+## Validate
+
+Every skill must pass the linter (≤300 lines, required frontmatter, folder == `name:`):
+
+```bash
+./lint.sh
+```
+
+Run it before opening a PR. Folders prefixed with `_` (scaffolding) are skipped.
 
 ## Status
 
