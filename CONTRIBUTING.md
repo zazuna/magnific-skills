@@ -19,7 +19,7 @@
 - **Return an `identifier`, not a `webUrl`.** Downstream skills chain on the creation `identifier`. `webUrl` is only for showing the user a link in text-only clients.
 - **One responsibility per skill.** If you're describing two outcomes, split into two skills.
 
-## MCP tool names are connector-specific ⚠️
+## MCP tool names are connector-specific
 
 The `allowed-tools` entries use the form `mcp__<connector-name>__<tool>`, e.g.
 `mcp__claude_ai_Magnific__images_generate`. **The `<connector-name>` segment depends

@@ -6,12 +6,14 @@
 ![Skills: 24](https://img.shields.io/badge/skills-24-blue)
 ![Agents](https://img.shields.io/badge/agents-Claude%20%C2%B7%20Codex%20%C2%B7%20Cursor-blueviolet)
 ![Lint](https://img.shields.io/github/actions/workflow/status/zazuna/magnific-skills/lint.yml?label=lint)
+[![Stars](https://img.shields.io/github/stars/zazuna/magnific-skills?style=social)](https://github.com/zazuna/magnific-skills/stargazers)
+[![Forks](https://img.shields.io/github/forks/zazuna/magnific-skills?style=social)](https://github.com/zazuna/magnific-skills/network/members)
 
 > ⚠️ **Unofficial / community project.** Built *for* Magnific via its public MCP server — **not affiliated with, sponsored by, or endorsed by Magnific or Freepik.** The name "Magnific" is used only to describe compatibility.
 
 A forkable, Higgsfield-style skill set for the [Magnific](https://magnific.com) MCP server. Turn Magnific's image, video, audio, and 3D tools into composable agent skills you can chain into real production workflows — banners, ad variants, listing visuals, video spots, and more.
 
-Works with any MCP-capable agent (Claude Code, Codex, etc.). Most skills are pure MCP calls; a few need a shell for steps the MCP server can't do itself (e.g. uploading a local file via presigned `PUT`). Those skills say so and offer a shell-free fallback, so they degrade gracefully on hosts without a terminal.
+Works with any MCP-capable agent (Claude Code, Codex, Cursor). Most skills are pure MCP calls; a few need a shell for steps the MCP server can't do itself (e.g. uploading a local file via presigned `PUT`). Those skills say so and offer a shell-free fallback, so they degrade gracefully on hosts without a terminal.
 
 ## Philosophy
 
@@ -26,7 +28,7 @@ Borrowed from [higgsfield-ai/skills](https://github.com/higgsfield-ai/skills):
 
 | Layer | What | Lives where |
 |-------|------|-------------|
-| **1 — Wrappers** | One thin skill per Magnific tool (generate, relight, upscale, resize, …) | This repo |
+| **1 — Wrappers** | One thin skill per Magnific capability (generate, relight, upscale, …; some wrap a few tightly-coupled tools) | This repo |
 | **2 — Orchestrators** | Multi-step pipelines built from Layer 1 (banner flow, listing visuals, video ad) | This repo |
 | **3 — Domain** | Your brand assets, formats, copy templates wired into Layer 2 | **Your own** private repo / project — not here |
 
@@ -39,8 +41,14 @@ magnific-skills/
   README.md
   CONTRIBUTING.md
   LICENSE
+  install.sh            # global installer: ./install.sh [claude|codex|cursor|all]
   lint.sh               # validates every SKILL.md (see "Validate")
-  .gitignore
+  CLAUDE.md             # Claude Code entry doc
+  AGENTS.md             # Codex / Cursor entry doc
+  .claude-plugin/       # Claude plugin manifest (plugin.json + marketplace.json)
+  .codex-plugin/        # Codex plugin manifest
+  .cursor-plugin/       # Cursor plugin manifest
+  .github/workflows/    # CI — runs lint.sh on every push/PR
   skills/
     _TEMPLATE/          # copy this to start a new skill
       SKILL.md
@@ -65,7 +73,7 @@ magnific-skills/
    Plugin manifests live in `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`.
 
 > **Note:** the `allowed-tools` IDs use a connector-specific prefix
-> (`mcp__claude_ai_Magnific__…`). If yours differs, see [CONTRIBUTING.md](CONTRIBUTING.md#mcp-tool-names-are-connector-specific-).
+> (`mcp__claude_ai_Magnific__…`). If yours differs, see [CONTRIBUTING.md](CONTRIBUTING.md#mcp-tool-names-are-connector-specific).
 
 ## Validate
 
@@ -83,7 +91,6 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 
 | Skill | Layer | What it does |
 |-------|-------|--------------|
-| [`creations-upload`](skills/creations-upload/SKILL.md) | 1 | Turn a public URL, host-attached file, or local file into a Magnific creation `identifier` — the prerequisite for using any image as a reference. |
 | [`images-generate`](skills/images-generate/SKILL.md) | 1 | Text-to-image, or image-conditioned generation using reference creations, characters, products, locations, or styles. |
 | [`images-upscale`](skills/images-upscale/SKILL.md) | 1 | AI-enlarge a creation 2x or 4x for print / hi-res output. |
 | [`images-relight`](skills/images-relight/SKILL.md) | 1 | Relight a creation with 1–4 directional lights (intensity, neutral or colored gel). |
@@ -91,9 +98,8 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`images-resize`](skills/images-resize/SKILL.md) | 1 | Resize a creation to exact pixel dimensions (snaps to ×8). |
 | [`images-crop`](skills/images-crop/SKILL.md) | 1 | Center-crop a creation to one of 8 target aspect ratios. |
 | [`images-variations`](skills/images-variations/SKILL.md) | 1 | Generate a grid of variations (angles, demographics, expressions, age, storyboard, custom). |
-| [`flows-run`](skills/flows-run/SKILL.md) | 1 | Find, inspect, and run a packaged Magnific Flow, then return the output creations. |
-| [`library-show`](skills/library-show/SKILL.md) | 1 | Browse or pick reusable Library assets (characters, styles, elements, locations) for use as references. |
-| [`folders-list`](skills/folders-list/SKILL.md) | 1 | List folders/projects to get a `folderReference` for filing outputs. |
+| [`images-change-camera`](skills/images-change-camera/SKILL.md) | 1 | Reframe the camera (rotate/vertical/closeup) around a subject. |
+| [`images-skin-enhancer`](skills/images-skin-enhancer/SKILL.md) | 1 | Enhance skin/portrait detail (faithful/creative/flexible). |
 | [`video-plan`](skills/video-plan/SKILL.md) | 1 | Draft a video brief, model choice, and clip breakdown before generating. |
 | [`video-generate`](skills/video-generate/SKILL.md) | 1 | Text/image-to-video and multi-shot clips with keyframes and references. |
 | [`video-speak`](skills/video-speak/SKILL.md) | 1 | Talking-head (image+audio) or lip-sync (video+audio) speaking videos. |
@@ -102,8 +108,10 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`audio-tts`](skills/audio-tts/SKILL.md) | 1 | Text-to-speech voiceover (single voice or two-speaker), ElevenLabs/Google. |
 | [`audio-music-generate`](skills/audio-music-generate/SKILL.md) | 1 | Generate music beds/soundtracks from a description (Lyria/ElevenLabs). |
 | [`models3d-generate`](skills/models3d-generate/SKILL.md) | 1 | Convert an image creation into a 3D GLB model (Tripo/Trellis). |
-| [`images-change-camera`](skills/images-change-camera/SKILL.md) | 1 | Reframe the camera (rotate/vertical/closeup) around a subject. |
-| [`images-skin-enhancer`](skills/images-skin-enhancer/SKILL.md) | 1 | Enhance skin/portrait detail (faithful/creative/flexible). |
+| [`creations-upload`](skills/creations-upload/SKILL.md) | 1 | Turn a public URL, host-attached file, or local file into a Magnific creation `identifier` — the prerequisite for using any image as a reference. |
+| [`flows-run`](skills/flows-run/SKILL.md) | 1 | Find, inspect, and run a packaged Magnific Flow, then return the output creations. |
+| [`library-show`](skills/library-show/SKILL.md) | 1 | Browse or pick reusable Library assets (characters, styles, elements, locations) for use as references. |
+| [`folders-list`](skills/folders-list/SKILL.md) | 1 | List folders/projects to get a `folderReference` for filing outputs. |
 | [`banner-flow`](skills/banner-flow/SKILL.md) | 2 | One brief/source → an on-brand banner in every requested placement/size. |
 | [`listing-visuals`](skills/listing-visuals/SKILL.md) | 2 | Property/product photos + features → a coherent listing set (hero, features, lifestyle). |
 | [`video-ad`](skills/video-ad/SKILL.md) | 2 | Brief → a finished short video ad (plan, generate, voice, score, assemble). |
