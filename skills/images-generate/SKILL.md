@@ -48,7 +48,7 @@ Each reference is `{type, identifier}`:
 | `product` | A pre-built **library** asset — numeric `id` from `library_list`. Never a creation. |
 | `locations` | A pre-built **library** asset — numeric `id` from `library_list`. Never a creation. |
 
-If the user hands you a **local file or a URL**, it is *not* yet a creation. Upload it first (a future `creations-upload` skill / `creations_request_upload` + `creations_finalize_upload`) to get a creation identifier, then pass that here. Do not pass raw URLs as reference identifiers.
+If the user hands you a **local file or a URL**, it is *not* yet a creation. Upload it first with the `creations-upload` skill to get a creation identifier, then pass that here. Do not pass raw URLs as reference identifiers.
 
 ## Steps
 
