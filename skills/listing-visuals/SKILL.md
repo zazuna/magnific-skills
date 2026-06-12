@@ -46,7 +46,7 @@ Do **not** use this for:
 3. **Hero.** `images-generate` (or enhance a source photo) into a strong hero, using brand style as a reference.
 4. **Feature shots.** For each feature, `images-generate` a focused visual, or use `images-variations` (e.g. `custom`/`storyboard`) to produce a coherent grid of feature/detail/lifestyle frames from one source.
 5. **Lifestyle/context.** Generate or vary context shots that place the subject in use.
-6. **Size per target.** For each output and each requested placement: `images-crop` → `images-resize` → `images-upscale` (when print/hi-res is needed).
+6. **Size per target.** If print/hi-res is needed, `images-upscale` the output **first**; then for each placement `images-crop` → `images-resize`. Never resize then upscale (quality order: upscale → crop → resize).
 7. **Preview & return.** Collect all output `identifier`s; preview; return the set labeled by role (hero, feature-1, lifestyle, …).
 
 ## Output

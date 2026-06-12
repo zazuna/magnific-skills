@@ -48,7 +48,7 @@ Do **not** use this for:
 3. **Generate the hero.** `images-generate` with the brief as prompt, brand assets + source photo as `references[]`, filed to `project`. Pick the aspect ratio closest to your largest target to preserve the most pixels.
 4. **Harmonize (as needed).** `images-relight` to match lighting; `images-remove-background` + a fresh background via `images-generate` to composite a product; `images-skin-enhancer` (faithful) if people are featured. Each returns a new identifier — carry the latest forward.
 5. **Make print-grade once.** If any target has `print: true`, `images-upscale` the hero now (upscale before crop/resize, per the quality order).
-6. **Fan out per target.** For each placement: `images-crop` to its ratio → `images-resize` to its exact px → (`images-upscale` if that target needs print quality and you didn't already). Use the **same hero** as the source for every format.
+6. **Fan out per target.** Working from the hero (already upscaled in step 5 when any target is print): for each placement, `images-crop` to its ratio → `images-resize` to its exact px. Use the **same hero** for every format. Never upscale *after* resizing — if a target needs more resolution than the hero has, raise the step-5 upscale instead.
 7. **Preview & return.** Collect every output creation `identifier`; preview them; hand back the set keyed by target `name`.
 
 ## Output

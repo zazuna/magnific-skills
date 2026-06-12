@@ -49,7 +49,7 @@ Do **not** use this for:
 2. **Hybrid check.** If the "Product ad spot" flow fits (product image → ready 15s commercial), offer `flows-run` as a shortcut and skip to step 7 with its output.
 3. **Prep references.** `library-show` / `creations-upload` for product/brand assets; `images-generate` for any keyframes the plan calls for.
 4. **Generate clip(s).** `video-generate` per the plan (one clip, or each planned shot for >15s). Pass keyframes/references as creation `identifier`s, never `webUrl`.
-5. **Voice & score.** `audio-tts` for narration (from `script`); `audio-music-generate` for a bed. If a presenter speaks, `video-speak` (image+audio talking head, or video+audio lip-sync).
+5. **Voice & score.** `audio-tts` for speech, `audio-music-generate` for a bed. **Mind how audio reaches the video:** only `video-speak` binds audio to a clip (talking head from image+audio, or lip-sync from video+audio). A voiceover *over b-roll* and a music bed are **not** muxed by these tools — either use a `video-generate` model that supports audio/sound effects, or deliver the tracks alongside the video for an external edit.
 6. **Assemble.** For multi-clip ads, `video-concatenate` the clips in order (2–10).
 7. **Finish.** `video-upscale` the final cut if higher quality/resolution is needed. File in `project`.
 8. **Preview & return** the final video creation `identifier`.
