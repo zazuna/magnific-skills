@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-remove-background
-description: Remove the background from an existing Magnific creation, returning the subject cut out on a transparent PNG — for product cut-outs, logos, and compositing onto banner backgrounds. Returns a new creation identifier.
+description: Cut the subject out of an existing image onto a transparent PNG for compositing. Use for product or logo cut-outs. To replace the background with a new AI scene use images-generate.
 argument-hint: "<creation identifier>"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_remove_background

@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: creations-upload
-description: Turn an external asset (public URL, host-attached file, or local file) into a Magnific creation and return its identifier — the prerequisite for using any image as a reference in images-generate, video-generate, relight, upscale, and other tools.
+description: Bring an external asset (a public URL, a host-attached file, or a local file) into Magnific as a creation and return its identifier. Use this first whenever you have a file or URL that another skill needs as a reference, because image and video skills require a creation identifier rather than a raw file.
 argument-hint: "<source: public URL | host file | local path> [mime type for local files]"
 allowed-tools:
   - mcp__claude_ai_Magnific__creations_upload_image

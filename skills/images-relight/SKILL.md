@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-relight
-description: Relight an existing Magnific creation with 1-4 controllable lights (direction, intensity, neutral or colored gel) — restyle the lighting of a product shot, portrait, or scene without regenerating it. Returns a new creation identifier.
+description: Relight an existing image with one to four directional lights to change mood, direction, or color. Use to change lighting only, not the subject (images-generate) or skin detail (images-skin-enhancer).
 argument-hint: "<creation identifier> <1-4 lights: azimuth + elevation [+ intensity/type/color]> [resolution 1k|2k]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_relight

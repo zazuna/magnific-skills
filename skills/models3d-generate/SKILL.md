@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: models3d-generate
-description: Convert an existing image creation into a 3D model (GLB) via Magnific — Tripo or Trellis engines, with face-count and texture controls. Returns a 3D creation identifier.
+description: Convert an existing image into a 3D model in GLB format using Tripo or Trellis. Use to turn a product or object photo into a mesh. For 2D image work use the images skills.
 argument-hint: "<source image creation id> [model: tripo-p1|tripo-v31|trellis-2]"
 allowed-tools:
   - mcp__claude_ai_Magnific__models3d_generate

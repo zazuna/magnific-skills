@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: listing-visuals
-description: Orchestrate a property/product listing visual set — hero, feature callouts, lifestyle, and detail shots — from source photos and a list of key features, sized to the placements you request. Layer 2 orchestrator built from the image primitives, with a flows-run shortcut to the "Marketplace listing visuals" flow when it fits.
+description: Produce a full property or product listing visual set (hero, feature shots, lifestyle, detail) from photos plus key features. Prefer this over images-generate for real-estate or marketplace listing image sets.
 argument-hint: "<source photos> <key features list> [target placements] [brand assets]"
 allowed-tools:
   - creations-upload

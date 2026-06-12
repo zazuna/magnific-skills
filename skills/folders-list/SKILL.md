@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: folders-list
-description: List Magnific folders and projects to obtain a folder reference — the value that image, video, and flow tools accept as folderReference to file their outputs in the right project. Use it before generating when results should land in a specific project rather than the default.
+description: List Magnific folders and projects to get a folderReference for filing outputs into the right project. Use before generating when results should land in a specific project rather than the default.
 argument-hint: "[onlyProjects] | [parent folder reference]"
 allowed-tools:
   - mcp__claude_ai_Magnific__folders_list

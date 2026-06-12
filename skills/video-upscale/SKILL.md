@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-upscale
-description: Upscale and enhance an existing video via Topaz or Magnific modes — higher resolution, frame interpolation, sharpening. Returns a new creation identifier. Parameters are mode-specific; check video_upscale_models_list.
+description: Upscale and enhance an existing video via Topaz or Magnific for higher resolution and smoother frames. Use for final video quality. To create the video use video-generate.
 argument-hint: "<creation id or video URL> <mode: topaz|magnific|magnific_precision>"
 allowed-tools:
   - mcp__claude_ai_Magnific__video_upscale

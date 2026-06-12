@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-resize
-description: Resize an existing Magnific creation to exact pixel dimensions (no AI) — for hitting a precise banner size or ad-slot spec. Returns a new creation identifier.
+description: Resize an existing image to exact pixel dimensions without AI, for hitting a precise banner or ad-slot size. Use for exact pixels. For AI enlargement use images-upscale, and for aspect-ratio reframing use images-crop.
 argument-hint: "<creation identifier> <width px> <height px>"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_resize

@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-change-camera
-description: Reframe the camera around the subject of an existing Magnific creation — rotate, change vertical angle, and adjust closeup without regenerating the scene. Returns a new creation identifier.
+description: Re-render an existing image from a new camera angle by rotating, tilting, or zooming around the subject. Use for a true viewpoint change. For a flat crop of the existing pixels use images-crop.
 argument-hint: "<creation id> [rotate 0-360] [vertical -30..90] [closeup 0-10]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_change_camera

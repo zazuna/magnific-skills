@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-speak
-description: Make a character speak — combine an image (talking head) or a video (lip sync) with an audio track to produce a speaking video via Magnific. Returns a creation identifier.
+description: Make a character speak by combining a face with audio (image plus audio for a talking head, or video plus audio for lip-sync). Use to put a voice onto a face. To create the voice track first use audio-tts.
 argument-hint: "<audio: creation id/URL> <image OR video: creation id/URL> [voiceId] [mode]"
 allowed-tools:
   - mcp__claude_ai_Magnific__video_speak

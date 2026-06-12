@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-variations
-description: Generate a grid of variations of an existing Magnific creation — by camera angle, demographics, expression, age, storyboard frames, or a custom prompt. Returns new creation identifiers for the grid tiles.
+description: Generate a grid of variations of an existing image by angle, demographics, expression, age, storyboard, or custom prompt. Use for several alternatives of one image at once. For a single new image use images-generate.
 argument-hint: "<creation identifier> [mode: angles|demographics|expressions|age|storyboard|custom] [grid RxC ≤9]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_variations

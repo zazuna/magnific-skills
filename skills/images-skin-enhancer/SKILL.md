@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-skin-enhancer
-description: Enhance skin and portrait detail on an existing Magnific creation — faithful (preserves identity), creative (reinterprets), or flexible (preset-driven). Returns a new creation identifier.
+description: Enhance skin and portrait detail on an existing image (faithful, creative, or flexible). Use for people and portrait clean-up. For lighting use images-relight, and for resolution use images-upscale.
 argument-hint: "<creation id> [version: faithful|creative|flexible]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_skin_enhancer

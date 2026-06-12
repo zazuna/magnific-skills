@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: audio-tts
-description: Generate a text-to-speech voiceover via Magnific (ElevenLabs or Google) — single voice or two-speaker dialogue. Returns an audio creation identifier for use as narration or to drive video-speak.
+description: Generate a spoken voiceover from text with one voice or two speakers (ElevenLabs or Google). Use for narration or dialogue audio. To put that voice on a face use video-speak, and for music use audio-music-generate.
 argument-hint: "<text> <voiceId | two speakers> [model]"
 allowed-tools:
   - mcp__claude_ai_Magnific__audio_tts

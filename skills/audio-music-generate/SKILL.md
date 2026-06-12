@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: audio-music-generate
-description: Generate AI music from a text description via Magnific (Google Lyria or ElevenLabs) — background beds and soundtracks, with or without vocals. Returns an audio creation identifier.
+description: Generate music or a soundtrack from a text description (Google Lyria or ElevenLabs), with or without vocals. Use for a background music bed. For spoken narration use audio-tts.
 argument-hint: "<music description> [model] [durationSeconds]"
 allowed-tools:
   - mcp__claude_ai_Magnific__audio_music_generate

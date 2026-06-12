@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-concatenate
-description: Join 2-10 completed video creations into a single MP4 in playback order — assembles the multi-clip plans that video-plan produces for videos over 15s. Returns a new creation identifier.
+description: Join 2 to 10 finished video clips into one MP4 in playback order. Use to assemble a multi-clip video. To create the clips use video-generate.
 argument-hint: "<2-10 video creation ids in playback order> [name]"
 allowed-tools:
   - mcp__claude_ai_Magnific__video_concatenate

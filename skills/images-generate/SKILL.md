@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-generate
-description: Generate or edit an image from a text prompt via Magnific — text-to-image, or image-conditioned generation using reference creations, characters, products, locations, or styles. Returns a creation identifier for chaining.
+description: Generate or edit a single image from a text prompt, optionally guided by reference images, characters, products, or styles. Use for one new image. For a multi-format banner set use banner-flow, and for many variants of an existing image use images-variations.
 argument-hint: "<prompt> [aspect ratio, e.g. 16:9] [count 1-8] [reference: type + creation/library id]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_generate

@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-upscale
-description: AI-upscale an existing Magnific creation 2x or 4x to add resolution and detail — Magnific's premium enlarger. Use for print-quality or hi-res banner output. Returns a new creation identifier.
+description: Enlarge and enhance an existing image 2x or 4x with AI for higher resolution and detail. Use for print or hi-res quality. For an exact pixel size use images-resize, and for an aspect-ratio change use images-crop.
 argument-hint: "<creation identifier> [scale 2x|4x]"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_upscale

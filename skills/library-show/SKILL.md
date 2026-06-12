@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: library-show
-description: Browse or pick reusable Magnific Library assets (characters, styles, elements, locations) — the brand assets that feed generation as references. Use it to let the user choose an asset visually, or to look one up headlessly, then pass its id into images-generate or video-generate.
+description: Browse or pick reusable Magnific Library brand assets (characters, styles, elements, locations) to use as generation references. Use to choose or look up a brand asset id before generating. To import a one-off photo use creations-upload.
 argument-hint: "[type: character|style|element|locations] [scope: all|projects|organization]"
 allowed-tools:
   - mcp__claude_ai_Magnific__library_show

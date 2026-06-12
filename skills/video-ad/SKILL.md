@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-ad
-description: Orchestrate a short video ad from a brief — plan it, generate the clip(s), add voiceover and music, optionally lip-sync a presenter, then assemble and enhance the final cut. Layer 2 orchestrator built from the video and audio primitives, with a flows-run shortcut to the "Product ad spot" flow when it fits.
+description: Produce a finished short video ad end to end, including planning, clip generation, voiceover, music, and assembly. Prefer this over video-generate whenever the user wants a complete ad or any multi-step video deliverable.
 argument-hint: "<brief> [duration sec] [aspect ratio] [product/brand assets] [presenter image]"
 allowed-tools:
   - video-plan

@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: images-crop
-description: Center-crop an existing Magnific creation to a target aspect ratio — for reframing one image into square, landscape, portrait, or wide formats. Returns a new creation identifier.
+description: Center-crop an existing image to a target aspect ratio (square, landscape, portrait, or wide). Use to reframe by ratio. For exact pixels use images-resize, and for a true camera-angle change use images-change-camera.
 argument-hint: "<creation identifier> <aspect ratio: 1:1|16:9|9:16|4:3|3:4|3:2|2:3|21:9>"
 allowed-tools:
   - mcp__claude_ai_Magnific__images_crop

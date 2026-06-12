@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-generate
-description: Generate video from a prompt and/or image keyframes and references via Magnific — text-to-video, image-to-video, and multi-shot clips. Returns creation identifiers. Run video-plan first unless the user says "just generate".
+description: Generate one or more raw video clips from a prompt and optional image keyframes or references. Use for a single clip. For a finished ad with voice, music, and assembly use video-ad, and run video-plan first.
 argument-hint: "<prompt> [model slug] [duration sec] [start/end keyframe creation ids]"
 allowed-tools:
   - mcp__claude_ai_Magnific__video_generate

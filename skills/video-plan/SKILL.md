@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: video-plan
-description: Draft a production plan for a video request before generating — returns a brief, open questions, characters to prepare, a recommended model slug, and a prompt draft. For videos over 15s it splits the work into clips plus concatenation instructions. Call this first for any non-trivial video.
+description: Plan a video before generating. Returns a brief, recommended model, prompt draft, and clip breakdown, and splits anything over 15 seconds into clips. Call this first for any non-trivial video. For a complete ad deliverable use video-ad.
 argument-hint: "<raw video idea> [aspect ratio] [duration sec] [style]"
 allowed-tools:
   - mcp__claude_ai_Magnific__video_plan

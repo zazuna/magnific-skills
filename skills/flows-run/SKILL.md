@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: flows-run
-description: Find, inspect, and run a Magnific Flow (a packaged multi-step pipeline) — e.g. "Audience-driven ads", "Marketplace listing visuals", "Room decorator" — then return the output creation identifiers. The fastest path to a finished result when a community or saved flow already does the job.
+description: Find, inspect, and run a pre-built Magnific Flow (a packaged pipeline) and return its output creations. Use when an existing community or saved flow already does the job. For custom multi-step work build from primitives or a Layer 2 orchestrator.
 argument-hint: "<flow name or identifier> [inputs per the flow's flows_get spec]"
 allowed-tools:
   - mcp__claude_ai_Magnific__flows_list

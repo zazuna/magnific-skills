@@ -1,7 +1,7 @@
 ---
 version: 0.1.0
 name: banner-flow
-description: Orchestrate a complete on-brand banner set from a brief plus source assets and a list of target placements/sizes — generate a hero visual, harmonize it, then crop/resize/upscale it into every requested format. Layer 2 orchestrator built from the image primitives, with a flows-run shortcut when a strong pre-built flow fits.
+description: Produce a complete multi-format banner set from one brief and source. Generate a hero, then output every requested placement and size. Prefer this over images-generate whenever the user wants banners, an ad set, or more than one format or size from a single concept.
 argument-hint: "<brief> <target placements: list of {name, ratio or WxH, print?}> [brand assets] [source photo]"
 allowed-tools:
   - library-show
