@@ -1,5 +1,14 @@
 # magnific-skills
 
+> Turn the [Magnific](https://magnific.com) MCP server into a composable, auto-selecting visual-production toolkit — **24 skills** for banners, listings, and video ads, installable in **Claude Code, Codex, or Cursor**.
+
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Skills: 24](https://img.shields.io/badge/skills-24-blue)
+![Agents](https://img.shields.io/badge/agents-Claude%20%C2%B7%20Codex%20%C2%B7%20Cursor-blueviolet)
+![Lint](https://img.shields.io/github/actions/workflow/status/zazuna/magnific-skills/lint.yml?label=lint)
+
+> ⚠️ **Unofficial / community project.** Built *for* Magnific via its public MCP server — **not affiliated with, sponsored by, or endorsed by Magnific or Freepik.** The name "Magnific" is used only to describe compatibility.
+
 A forkable, Higgsfield-style skill set for the [Magnific](https://magnific.com) MCP server. Turn Magnific's image, video, audio, and 3D tools into composable agent skills you can chain into real production workflows — banners, ad variants, listing visuals, video spots, and more.
 
 Works with any MCP-capable agent (Claude Code, Codex, etc.). Most skills are pure MCP calls; a few need a shell for steps the MCP server can't do itself (e.g. uploading a local file via presigned `PUT`). Those skills say so and offer a shell-free fallback, so they degrade gracefully on hosts without a terminal.
