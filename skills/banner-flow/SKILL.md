@@ -19,7 +19,7 @@ allowed-tools:
 
 # banner-flow
 
-> Brief + assets + a list of target formats → a finished banner in each format. The Omnia banner deliverable.
+> Brief + assets + a list of target formats → a finished banner in each format. A complete multi-format banner deliverable.
 
 ## When to use
 
@@ -39,7 +39,7 @@ Do **not** use this for:
 | `targets` | **yes** | List of placements: each `{ name, ratio (e.g. 1:1) OR width×height px, print? }`. This run produces exactly these. |
 | `brandAssets` | no | Library asset ids (style/character/product/location) via `library-show`. |
 | `sourcePhoto` | no | A property/product photo to feature; a URL/local file becomes a creation via `creations-upload`. |
-| `project` | no | Omnia project folder via `folders-list` (`folderReference`). |
+| `project` | no | your project folder via `folders-list` (`folderReference`). |
 
 ## Steps
 
@@ -58,7 +58,7 @@ A set of banner creation `identifier`s — one per requested placement — all f
 ## Chaining
 
 - **Composes:** `library-show`, `creations-upload`, `folders-list`, `flows-run`, `images-generate`, `images-relight`, `images-remove-background`, `images-skin-enhancer`, `images-crop`, `images-resize`, `images-upscale`.
-- **Wrapped by:** a Layer 3 (brand) skill that supplies Omnia's assets, palette, and standard placement list.
+- **Wrapped by:** a Layer 3 (brand) skill that supplies your brand assets, palette, and standard placement list.
 
 ## Notes
 

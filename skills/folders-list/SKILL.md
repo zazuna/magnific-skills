@@ -13,7 +13,7 @@ allowed-tools:
 
 ## When to use
 
-- Outputs must land in a specific **project/folder** (e.g. the Omnia campaign), not the default.
+- Outputs must land in a specific **project/folder** (e.g. a specific campaign), not the default.
 - You need to browse the project/folder tree to pick or confirm a target.
 
 Do **not** use this to:
