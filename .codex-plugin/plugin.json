@@ -5,10 +5,10 @@
   "author": {
     "name": "Giorgi Zazadze",
     "email": "giorgizazadze@gmail.com",
-    "url": "https://github.com/giorgizazadze"
+    "url": "https://github.com/zazuna"
   },
-  "homepage": "https://github.com/giorgizazadze/magnific-skills",
-  "repository": "https://github.com/giorgizazadze/magnific-skills",
+  "homepage": "https://github.com/zazuna/magnific-skills",
+  "repository": "https://github.com/zazuna/magnific-skills",
   "license": "MIT",
   "keywords": [
     "magnific",
@@ -29,7 +29,7 @@
       "Read",
       "Write"
     ],
-    "websiteURL": "https://github.com/giorgizazadze/magnific-skills",
+    "websiteURL": "https://github.com/zazuna/magnific-skills",
     "defaultPrompt": [
       "Build an on-brand banner set from this brief and these target sizes",
       "Turn these property photos into a listing visual set",

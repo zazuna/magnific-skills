@@ -4,10 +4,10 @@
   "description": "A forkable, Higgsfield-style skill set for the Magnific MCP server: 21 Layer 1 wrappers (image, video, audio, 3D, flows, library, folders) and Layer 2 orchestrators (banner-flow, listing-visuals, video-ad) for automated visual production. Community project, not official Magnific software.",
   "author": {
     "name": "Giorgi Zazadze",
-    "url": "https://github.com/giorgizazadze"
+    "url": "https://github.com/zazuna"
   },
-  "homepage": "https://github.com/giorgizazadze/magnific-skills",
-  "repository": "https://github.com/giorgizazadze/magnific-skills",
+  "homepage": "https://github.com/zazuna/magnific-skills",
+  "repository": "https://github.com/zazuna/magnific-skills",
   "license": "MIT",
   "keywords": [
     "magnific",
