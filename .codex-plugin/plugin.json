@@ -1,0 +1,40 @@
+{
+  "name": "magnific-skills",
+  "version": "0.1.0",
+  "description": "Composable Magnific MCP skills for automated visual production — image, video, audio, and 3D primitives plus banner/listing/video-ad orchestrators.",
+  "author": {
+    "name": "Giorgi Zazadze",
+    "email": "giorgizazadze@gmail.com",
+    "url": "https://github.com/giorgizazadze"
+  },
+  "homepage": "https://github.com/giorgizazadze/magnific-skills",
+  "repository": "https://github.com/giorgizazadze/magnific-skills",
+  "license": "MIT",
+  "keywords": [
+    "magnific",
+    "mcp",
+    "image-generation",
+    "video-generation",
+    "banner-automation",
+    "real-estate-marketing"
+  ],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "Magnific Skills",
+    "shortDescription": "Composable Magnific MCP skills for banners, listings, and video ads",
+    "longDescription": "magnific-skills turns any MCP-capable coding agent into a visual-production agent on top of the Magnific MCP server. It ships 21 Layer 1 primitives (generate, upscale, relight, remove-background, resize, crop, variations, change-camera, skin-enhancer, video plan/generate/speak/upscale/concatenate, audio TTS/music, 3D, plus creations-upload, flows-run, library-show, folders-list) and 3 Layer 2 orchestrators (banner-flow, listing-visuals, video-ad). Skills chain by passing creation identifiers, and require the Magnific MCP server to be connected. Community project, not official Magnific software.",
+    "developerName": "Giorgi Zazadze",
+    "category": "Design",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/giorgizazadze/magnific-skills",
+    "defaultPrompt": [
+      "Build an on-brand banner set from this brief and these target sizes",
+      "Turn these property photos into a listing visual set",
+      "Generate a 15-second product video ad from this brief",
+      "Upscale and relight this product image for print"
+    ]
+  }
+}

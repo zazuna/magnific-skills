@@ -48,7 +48,12 @@ magnific-skills/
    claude mcp add --transport http magnific https://mcp.magnific.com
    ```
 2. Authenticate (in Claude Code: `/mcp` → select Magnific).
-3. Point your agent at the `skills/` directory.
+3. Install the skills globally for your agent:
+   ```bash
+   ./install.sh claude     # or: codex | cursor | all   (add --copy to copy instead of symlink)
+   ```
+   Per-agent details: [CLAUDE.md](CLAUDE.md) (Claude Code) · [AGENTS.md](AGENTS.md) (Codex/Cursor).
+   Plugin manifests live in `.claude-plugin/`, `.codex-plugin/`, `.cursor-plugin/`.
 
 > **Note:** the `allowed-tools` IDs use a connector-specific prefix
 > (`mcp__claude_ai_Magnific__…`). If yours differs, see [CONTRIBUTING.md](CONTRIBUTING.md#mcp-tool-names-are-connector-specific-).

@@ -1,0 +1,41 @@
+{
+  "name": "magnific-skills",
+  "owner": {
+    "name": "Giorgi Zazadze",
+    "url": "https://github.com/giorgizazadze"
+  },
+  "plugins": [
+    {
+      "name": "magnific-skills",
+      "source": "./",
+      "description": "Composable Magnific MCP skills for automated visual production — primitives plus banner/listing/video-ad orchestrators.",
+      "version": "0.1.0",
+      "skills": [
+        { "name": "images-generate", "path": "skills/images-generate", "invoke": "/magnific-skills:images-generate" },
+        { "name": "images-upscale", "path": "skills/images-upscale", "invoke": "/magnific-skills:images-upscale" },
+        { "name": "images-relight", "path": "skills/images-relight", "invoke": "/magnific-skills:images-relight" },
+        { "name": "images-remove-background", "path": "skills/images-remove-background", "invoke": "/magnific-skills:images-remove-background" },
+        { "name": "images-resize", "path": "skills/images-resize", "invoke": "/magnific-skills:images-resize" },
+        { "name": "images-crop", "path": "skills/images-crop", "invoke": "/magnific-skills:images-crop" },
+        { "name": "images-variations", "path": "skills/images-variations", "invoke": "/magnific-skills:images-variations" },
+        { "name": "images-change-camera", "path": "skills/images-change-camera", "invoke": "/magnific-skills:images-change-camera" },
+        { "name": "images-skin-enhancer", "path": "skills/images-skin-enhancer", "invoke": "/magnific-skills:images-skin-enhancer" },
+        { "name": "video-plan", "path": "skills/video-plan", "invoke": "/magnific-skills:video-plan" },
+        { "name": "video-generate", "path": "skills/video-generate", "invoke": "/magnific-skills:video-generate" },
+        { "name": "video-speak", "path": "skills/video-speak", "invoke": "/magnific-skills:video-speak" },
+        { "name": "video-upscale", "path": "skills/video-upscale", "invoke": "/magnific-skills:video-upscale" },
+        { "name": "video-concatenate", "path": "skills/video-concatenate", "invoke": "/magnific-skills:video-concatenate" },
+        { "name": "audio-tts", "path": "skills/audio-tts", "invoke": "/magnific-skills:audio-tts" },
+        { "name": "audio-music-generate", "path": "skills/audio-music-generate", "invoke": "/magnific-skills:audio-music-generate" },
+        { "name": "models3d-generate", "path": "skills/models3d-generate", "invoke": "/magnific-skills:models3d-generate" },
+        { "name": "creations-upload", "path": "skills/creations-upload", "invoke": "/magnific-skills:creations-upload" },
+        { "name": "flows-run", "path": "skills/flows-run", "invoke": "/magnific-skills:flows-run" },
+        { "name": "library-show", "path": "skills/library-show", "invoke": "/magnific-skills:library-show" },
+        { "name": "folders-list", "path": "skills/folders-list", "invoke": "/magnific-skills:folders-list" },
+        { "name": "banner-flow", "path": "skills/banner-flow", "invoke": "/magnific-skills:banner-flow" },
+        { "name": "listing-visuals", "path": "skills/listing-visuals", "invoke": "/magnific-skills:listing-visuals" },
+        { "name": "video-ad", "path": "skills/video-ad", "invoke": "/magnific-skills:video-ad" }
+      ]
+    }
+  ]
+}

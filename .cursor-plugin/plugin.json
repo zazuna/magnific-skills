@@ -1,0 +1,24 @@
+{
+  "$schema": "https://cursor.com/schemas/cursor-plugin/plugin.json",
+  "name": "magnific-skills",
+  "displayName": "Magnific Skills",
+  "version": "0.1.0",
+  "description": "Composable Magnific MCP skills for automated visual production — image, video, audio, and 3D primitives plus banner/listing/video-ad orchestrators.",
+  "author": {
+    "name": "Giorgi Zazadze",
+    "email": "giorgizazadze@gmail.com"
+  },
+  "publisher": "giorgizazadze",
+  "homepage": "https://github.com/giorgizazadze/magnific-skills",
+  "repository": "https://github.com/giorgizazadze/magnific-skills",
+  "license": "MIT",
+  "category": "ai-content",
+  "keywords": [
+    "magnific",
+    "mcp",
+    "image-generation",
+    "video-generation",
+    "banner-automation",
+    "real-estate-marketing"
+  ]
+}

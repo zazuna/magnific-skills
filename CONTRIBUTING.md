@@ -7,7 +7,10 @@
 3. Use kebab-case for the folder and the `name:` field — they must match.
 4. List only the Magnific MCP tools the skill actually calls in `allowed-tools`.
 5. Put long examples, sample prompts, and reference images in `references/`.
-6. Add a row for the skill to the **Skills** table in `README.md` (name, layer, one-line description). The catalog is the front door — a skill that isn't listed effectively doesn't exist.
+6. Register the skill in two places so it's discoverable:
+   - the **Skills** table in `README.md` (name, layer, one-line description) — the human front door;
+   - the `skills[]` array in `.claude-plugin/marketplace.json` (`name`, `path: skills/<name>`, `invoke: /magnific-skills:<name>`) — the Claude plugin front door.
+   A skill missing from either effectively doesn't exist for that audience.
 
 ## SKILL.md rules
 
