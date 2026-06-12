@@ -90,10 +90,13 @@ Layer 1 = thin wrappers over one Magnific capability. Layer 2 = orchestrators bu
 | [`models3d-generate`](skills/models3d-generate/SKILL.md) | 1 | Convert an image creation into a 3D GLB model (Tripo/Trellis). |
 | [`images-change-camera`](skills/images-change-camera/SKILL.md) | 1 | Reframe the camera (rotate/vertical/closeup) around a subject. |
 | [`images-skin-enhancer`](skills/images-skin-enhancer/SKILL.md) | 1 | Enhance skin/portrait detail (faithful/creative/flexible). |
+| [`banner-flow`](skills/banner-flow/SKILL.md) | 2 | One brief/source → an on-brand banner in every requested placement/size. |
+| [`listing-visuals`](skills/listing-visuals/SKILL.md) | 2 | Property/product photos + features → a coherent listing set (hero, features, lifestyle). |
+| [`video-ad`](skills/video-ad/SKILL.md) | 2 | Brief → a finished short video ad (plan, generate, voice, score, assemble). |
 
 ## Status
 
-🚧 **Layer 1 complete** — 21 wrappers covering the image, video, audio, 3D, flow, library, and folder surface. Layer 2 orchestrators (banner-flow, listing visuals, video ad) not started.
+🚧 **Layers 1 & 2 complete.** 21 Layer 1 wrappers (image, video, audio, 3D, flow, library, folder) + 3 Layer 2 orchestrators (`banner-flow`, `listing-visuals`, `video-ad`). Layer 3 (brand-specific) stays in your own repo.
 
 ## License
 

@@ -42,6 +42,13 @@ is stable.
   `finalize_upload`). What a Layer 1 skill must **not** do is orchestrate *separate*
   intents (don't generate-then-upscale in one wrapper — that's Layer 2).
 - **Layer 2** skills orchestrate Layer 1 skills. They call no Magnific tool directly that a Layer 1 skill already wraps.
+
+### Layer 2 conventions
+
+- A Layer 2 skill's `allowed-tools` lists the **Layer 1 skills it composes** (by skill name), **not** raw `mcp__…` tools. This makes the composition explicit and greppable, and structurally enforces "an orchestrator delegates to primitives instead of re-implementing them."
+- **Hybrid shortcut:** when a strong pre-built Magnific Flow already does the job, a Layer 2 skill may offer `flows-run` as a fast path — defaulting to primitive composition otherwise.
+- **Thread creation `identifier`s between steps — never `webUrl`.** Every Layer 1 step returns an identifier; pass it to the next.
+- Every Layer 1 skill named in a Layer 2 skill's `allowed-tools` must exist in `skills/`.
 - **Layer 3** (your brand-specific skills) does **not** belong in this repo. Keep it in your own project.
 
 ## Naming
